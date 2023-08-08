@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
+
 const Output = () => {
   const location = useLocation();
   const result = location.state?.result || [];
@@ -44,8 +45,8 @@ const Output = () => {
               <TableRow
                 key={row.name}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
-                <TableCell align="center">{row.price}</TableCell>
                 <TableCell align="center">{row.flightName}</TableCell>
+                <TableCell align="center">{row.price}</TableCell>
               </TableRow>
             ))}
           </TableBody>
